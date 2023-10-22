@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Add meta tags for SEO -->
+    <meta name="description"
+        content="FeedBuzz is a social platform for sharing posts and connecting with others. Join us today and socialize with our community.">
+    <meta name="keywords" content="social platform, FeedBuzz, posts, socialize, community">
+    <meta name="author" content="Priyanshu">
+    <meta name="robots" content="index, follow">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+
+    <!-- Open Graph and Twitter Card meta tags for social sharing -->
+    <meta property="og:title" content="FeedBuzz - Let's Socialize">
+    <meta property="og:description"
+        content="Join FeedBuzz, a social platform for sharing posts and connecting with others. Socialize with our community today.">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@yourtwitterhandle">
+    <meta name="twitter:title" content="FeedBuzz - Let's Socialize">
+    <meta name="twitter:description"
+        content="Join FeedBuzz, a social platform for sharing posts and connecting with others. Socialize with our community today.">
+    <meta name="twitter:image" content="https://www.example.com/your-image.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="Images/favicon_io/android-chrome-512x512.png">
+
+    <!-- Added Required Stylesheets -->
+    <link rel="stylesheet" href="CSS/header.css">
+    <link rel="stylesheet" href="CSS/post.css">
+    <link rel="stylesheet" href="CSS/content&Feed.css">
+    <link rel="stylesheet" href="CSS/form.css">
+    <link rel="stylesheet" href="CSS/confirmDeletion.css">
+    <link rel="stylesheet" href="CSS/footer.css">
+
+    <title>FeedBuzz - Let's Socialize</title>
+</head>
+
+<script>
+    function loadPage() {
+        loadPostsFromLocalStorage();
+        updateUI();
+    }
+</script>
+
+<body onload="loadPage()">
+    <div class="mainContainer">
+        <div class="mianWrapper">
+
+            <!-- Header -->
+            <header class="site-header">
+                <div class="logo"><a href="#">FeedBuzz</a></div>
+                <div class="menu-button">
+                    <div class="menu-icon">&#9776;</div>
+                    <div class="close-icon">&#10006;</div>
+                </div>
+                <nav class="main-nav">
+                    <ul>
+                        <li id="headerAddPostBtn">
+                            <button class="headerAddPostBtn addPostTextBtn" onclick="toggleForm()">Add Post</button>
+                            <button class="headerAddPostBtn addPostIconBtn" onclick="toggleForm()"><i
+                                    class="fa-solid fa-plus"></i></button>
+                            <button class="logoutBtn" onclick="alert(`Logout successful`)" title="logout"><a
+                                    href="index.html"><i class="fas fa-sign-out-alt"></i></a></button>
+                        </li>
+                        <li id="logInBtn">
+                            <a href="login.html" class="loginTextBtn">Log In</a>
+                            <a href="login.html" class="loginIconBtn" title="Log In"><i
+                                    class="fa-solid fa-user"></i></a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+
+            <!-- add new post form -->
+            <form action="" onsubmit="" class="addNewPostForm" id="addNewPostForm"></form>
+
+            <!-- User Feed and account container -->
+            <div class="userInteractionArea" id="userInteractionArea">
+                <div class="postContianer" id="postContianer"></div>
+                <div class="accountCard" id="accountCard"></div>
+            </div>
+
+
+            <!-- footer container -->
+            <footer class="footer" id="footer">
+                <div class="footer-content">
+                    <ul class="footer-links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="aboutUs.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                    <ul class="footer-buttons">
+                        <li><button class="footer-button"><a href="termsOfService.html">Terms of Service</a></button>
+                        </li>
+                        <li><button class="footer-button"><a href="privacy.html">Privacy Policy</a></button></li>
+                    </ul>
+                </div>
+                <div class="footer-copyright">
+                    &copy; 2023 FeedBuzz. All rights reserved.
+                    <p>Developed meticulously by Priyanshu</p>
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+
+<script src="Scripts/addPostForm.js"></script>
+<script src="Scripts/checkLogin.js"></script>
+<script src="Scripts/feed.js"></script>
+<script src="Scripts/currentUser.js"></script>
+<script src="Scripts/confirmDeletion.js"></script>
+
+</html>

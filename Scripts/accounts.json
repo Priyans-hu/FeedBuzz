@@ -1,0 +1,82 @@
+[
+    {
+        "userId": 1,
+        "username": "user1",
+        "name": "John Doe",
+        "password": "password",
+        "profilepicture": "https://example.com/user1.jpg",
+        "bio": "I'm a software developer and nature enthusiast."
+    },
+    {
+        "userId": 2,
+        "username": "user2",
+        "name": "Alice Smith",
+        "password": "simplepass",
+        "profilepicture": "https://example.com/user2.jpg",
+        "bio": "Avid traveler and foodie. Exploring the world one bite at a time."
+    },
+    {
+        "userId": 3,
+        "username": "user3",
+        "name": "Emily Johnson",
+        "password": "easy123",
+        "profilepicture": "https://example.com/user3.jpg",
+        "bio": "Tech geek, coffee lover, and aspiring writer."
+    },
+    {
+        "userId": 4,
+        "username": "user4",
+        "name": "Mark Wilson",
+        "password": "userpass",
+        "profilepicture": "https://example.com/user4.jpg",
+        "bio": "Sports enthusiast and fitness junkie."
+    },
+    {
+        "userId": 5,
+        "username": "user5",
+        "name": "Sara Brown",
+        "password": "pass123",
+        "profilepicture": "https://example.com/user5.jpg",
+        "bio": "Passionate about art, fashion, and photography."
+    },
+    {
+        "userId": 6,
+        "username": "user6",
+        "name": "Michael Lee",
+        "password": "michaelpass",
+        "profilepicture": "https://example.com/user6.jpg",
+        "bio": "Music lover, guitarist, and tech-savvy."
+    },
+    {
+        "userId": 7,
+        "username": "user7",
+        "name": "Olivia Clark",
+        "password": "olivia123",
+        "profilepicture": "https://example.com/user7.jpg",
+        "bio": "Bookworm, explorer, and lifelong learner."
+    },
+    {
+        "userId": 8,
+        "username": "user8",
+        "name": "James Turner",
+        "password": "jamesturner",
+        "profilepicture": "https://example.com/user8.jpg",
+        "bio": "Outdoor adventurer and dog lover."
+    },
+    {
+        "userId": 9,
+        "username": "user9",
+        "name": "Linda White",
+        "password": "lindapass",
+        "profilepicture": "https://example.com/user9.jpg",
+        "bio": "Fitness coach, health advocate, and food blogger."
+    },
+    {
+        "userId": 10,
+        "username": "user10",
+        "name": "William Harris",
+        "password": "will123",
+        "profilepicture": "https://example.com/user10.jpg",
+        "bio": "Entrepreneur, traveler, and startup enthusiast."
+    }
+]

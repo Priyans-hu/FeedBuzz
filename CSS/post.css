@@ -1,0 +1,244 @@
+/* Global styles */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    padding-top: 7em;
+    overflow-x: hidden;
+    background-color: #080710;
+}
+
+/* Style for the post card container */
+.postCard {
+    width: 100%;
+    max-width: 50%;
+    color: white;
+    overflow: hidden;
+    margin: 20px auto;
+    position: relative;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.13);
+    box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.postCard::before {
+    content: "";
+    width: 15em;
+    height: 15em;
+    right: 0;
+    bottom: 0;
+    top: -80px;
+    z-index: -2;
+    left: -80px;
+    filter: blur(5px);
+    border-radius: 50%;
+    position: absolute;
+    background: linear-gradient(#1845ad, #23a2f6);
+}
+
+.postCard::after {
+    content: "";
+    width: 12em;
+    height: 12em;
+    bottom: -80px;
+    z-index: -2;
+    right: -80px;
+    border-radius: 50%;
+    position: absolute;
+    filter: blur(5px);
+    backdrop-filter: blur(10px);
+    background: linear-gradient(to right, #ff512f, #f09819);
+}
+
+.postCard:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Flex container for the post content */
+.postContent {
+    display: flex;
+    padding: 20px;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+/* Style for the post image */
+.postImg {
+    flex: 1;
+    max-width: 50%;
+    margin-right: 2em;
+}
+
+.postImg img {
+    width: 100%;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+/* Flex container for the post information */
+.postInfo {
+    flex: 1;
+    position: relative;
+}
+
+/* Style for the post caption */
+.postCaption h1 {
+    font-size: 1.6em;
+    margin: 10px 0;
+    color: white;
+    font-weight: normal;
+}
+
+/* Styles for the menu button */
+.menuBtnCont {
+    top: 10px;
+    right: 0;
+    position: absolute;
+}
+
+.menuBtnCont button {
+    border: none;
+    margin: 0.2em;
+    outline: none;
+    color: white;
+    background-color: transparent;
+}
+
+.editPostBtn:hover{
+    color: #007bff;
+    cursor: pointer;
+    transform: scale(1.5);
+}
+
+.deletePostBtn:hover{
+    color: red;
+    cursor: pointer;
+    transform: scale(1.5);
+}
+
+/* Style for the like count */
+.likeCountContainer {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: white;
+    margin-top: 10px;
+}
+
+.likeCountContainer i::before {
+    content: '\2764';
+    /* Heart icon */
+    font-size: 18px;
+    margin-right: 5px;
+    color: #ff5733;
+}
+
+/* Style for the post description */
+.postDesc p {
+    font-size: 0.9em;
+    color: #EDEAE0;
+    margin-top: 10px;
+}
+
+/* Style for the "Read More" button */
+.readMoreButton {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.readMoreButton:hover {
+    background-color: #0056b3;
+}
+
+/* Style for the post details */
+.postDetails {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.authorName p {
+    font-size: 1em;
+    font-weight: medium;
+    color: #777;
+}
+
+.CreationDate {
+    font-size: 0.9em;
+    color: #777;
+}
+
+/* Style for the comment container */
+.commentContainer {
+    font-size: 14px;
+    color: #007bff;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.commentContainer:hover {
+    text-decoration: underline;
+}
+
+
+/* Media query for mobile devices and small tablets */
+@media screen and (max-width: 1024px) {
+    .postCard {
+        max-width: 80%;
+    }
+
+    .postCard:hover {
+        cursor: pointer;
+    }
+
+    .postContent {
+        flex-direction: column;
+        align-items: left;
+        padding: 1.6em;
+    }
+
+
+    .postImg {
+        max-width: 100%;
+        margin-right: 0;
+    }
+
+    .postInfo {
+        width: 99%;
+        padding-left: 0.5em;
+    }
+}
+
+/* Media query for mobile devices and small tablets */
+@media screen and (max-width: 768px) {
+    .postCard {
+        max-width: 80%;
+    }
+
+    .postContent {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .postImg {
+        max-width: 100%;
+        margin-right: 0;
+    }
+
+    .postInfo {
+        margin-top: 1em;
+    }
+}

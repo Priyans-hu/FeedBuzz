@@ -1,0 +1,117 @@
+/* Form Styles */
+.addNewPostForm {
+    display: none;
+    position: relative;
+}
+
+
+/* .addNewPostForm:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+} */
+
+.inputContianer{
+    width: 100%;
+    padding: 20px;
+    max-width: 48%;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.13);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.inputContianer:hover{
+    transform: scale(1.02);
+}
+
+.inputContianer::before {
+    content: "";
+    width: 15em;
+    height: 15em;
+    right: 0;
+    bottom: 0;
+    top: -80px;
+    z-index: -2;
+    left: -80px;
+    filter: blur(5px);
+    border-radius: 50%;
+    position: absolute;
+    background: linear-gradient(#1845ad,#23a2f6);
+}
+
+.inputContianer::after {
+    content: "";
+    width: 12em;
+    height: 12em;
+    bottom: -80px;
+    z-index: -2;
+    right: -80px;
+    border-radius: 50%;
+    position: absolute;
+    filter: blur(5px);
+    backdrop-filter: blur(10px);
+    background: linear-gradient(to right,#ff512f,#f09819);
+}
+
+.form-group {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.form-label {
+    font-weight: 500;
+    display: block;
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+.form-input {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    font-weight: 500;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-input:focus {
+    border: solid #007bff 1px;
+    animation: glow 0.5s ease infinite alternate;
+}
+
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    }
+    100% {
+        box-shadow: 0 0 10px rgba(0, 123, 255, 0.7);
+    }
+}
+
+
+.form-actions{
+    text-align: center;
+}
+
+.form-button {
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 5px;
+    padding: 10px 20px;
+    background-color: #007bff;
+}
+
+.form-button:hover {
+    background-color: #0056b3;
+}
+
+@media screen and (max-width: 768px) {
+    .inputContianer {
+        max-width: 80%;
+    }
+}

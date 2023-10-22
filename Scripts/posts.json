@@ -1,0 +1,27 @@
+[
+    {
+        "postId": 1,
+        "authorName": "Alice",
+        "creationDateTime": "2023-09-01 09:30 AM",
+        "caption": "A Beautiful Sunrise",
+        "description": "Woke up to this breathtaking sunrise today. Nature is amazing!",
+        "postImage": "https://images.pexels.com/photos/746386/pexels-photo-746386.jpeg?auto=compress&cs=tinysrgb&w=1600",
+        "likeCount": 102,
+        "comments": [
+            { "commentId": 1, "authorName": "Bob", "text": "Wow, that's stunning!" },
+            { "commentId": 2, "authorName": "Charlie", "text": "Nature never disappoints." }
+        ]
+    },
+    {
+        "postId": 2,
+        "authorName": "Bob",
+        "creationDateTime": "2023-09-02 02:15 PM",
+        "caption": "Hiking Adventure",
+        "description": "Exploring the great outdoors on a beautiful hiking trail.",
+        "postImage": "https://images.pexels.com/photos/1822458/pexels-photo-1822458.jpeg?auto=compress&cs=tinysrgb&w=1600",
+        "likeCount": 76,
+        "comments": [
+            { "commentId": 3, "authorName": "Alice", "text": "Looks like a fantastic adventure!" }
+        ]
+    }
+]
