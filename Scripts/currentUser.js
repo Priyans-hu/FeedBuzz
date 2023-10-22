@@ -19,6 +19,10 @@ fetch('Scripts/accounts.json')
         console.error('There was a problem with the fetch operation:', error);
     });
     
+function getIndexAndRender(){
+    const index = urlParams.get('id');
+    renderUserCard(index);
+}
     
 function renderUserCard(index) {
     currUser = users[index - 1];

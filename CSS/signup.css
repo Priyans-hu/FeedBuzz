@@ -94,24 +94,30 @@ input {
 }
 
 button {
-    margin-top: 20px;
     width: 100%;
-    background-color: #ffffff;
-    color: #080710;
+    cursor: pointer;
     padding: 15px 0;
     font-size: 18px;
     font-weight: 600;
+    color: #080710;
+    margin-top: 20px;
     border-radius: 5px;
-    cursor: pointer;
+    background-color: #ffffff;
+    transition: background-color 0.2s ease;
 }
 
-#loginForm div p{
+button:hover {
+    color: #fff;
+    background-color: #23a2f6;
+}
+
+#signUpForm div p{
     margin-top: 0.5em;
     font-size: 0.8em;
     color: gray;
 }
 
-#loginForm div p a {
+#signUpForm div p #loginRedirect{
     color: #23a2f6;
 }
 

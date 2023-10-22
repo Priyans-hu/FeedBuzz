@@ -1,7 +1,7 @@
 const form = document.getElementById('signUpForm');
 const usernameInput = document.getElementById('username');
 const passwordInput = document.getElementById('password');
-const confirmPasswordInput = document.getElementById('confirmPassword');
+const userBioInput = document.getElementById('userBio');
 
 let users = [];
 
@@ -19,14 +19,14 @@ fetch('Scripts/accounts.json')
         console.error('There was a problem with the fetch operation:', error);
     });
 
-    localStorage.setItem('users', JSON.stringify(users));
+localStorage.setItem('users', JSON.stringify(users));
 
 form.addEventListener('submit', function (event) {
     event.preventDefault();
 
     const username = usernameInput.value;
     const password = passwordInput.value;
-    const confirmPassword = confirmPasswordInput.value;
+    const userBio = userBioInput.value;
 
     const maxUserId = Math.max(...users.map(user => user.userId));
     const newUser = {
@@ -34,8 +34,8 @@ form.addEventListener('submit', function (event) {
         "username": username,
         "name": username,
         "password": password,
-        "profilepicture": "https://static.vecteezy.com/system/resources/previews/020/765/399/non_2x/default-profile-account-unknown-icon-black-silhouette-free-vector.jpg",
-        "bio": "I'm a software developer and nature enthusiast.",
+        "profilepicture": "https://i.pinimg.com/280x280_RS/77/0f/b7/770fb75f5e81e4c2dbe8934f246aeeab.jpg",
+        "bio": userBio,
         "postCount": 0,
         "followers": 0,
         "following": 0
