@@ -4,79 +4,109 @@
         "username": "user1",
         "name": "John Doe",
         "password": "password",
-        "profilepicture": "https://example.com/user1.jpg",
-        "bio": "I'm a software developer and nature enthusiast."
+        "profilepicture": "https://images.unsplash.com/photo-1619412112597-0ac2d2a2d0f7?auto=format&fit=crop&q=60&w=400&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8aW5zdGFncmFtJTIwcHJvZmlsZXxlbnwwfHwwfHx8MA%3D%3D",
+        "bio": "I'm a software developer and nature enthusiast.",
+        "postCount": 25,
+        "followers": 1500,
+        "following": 500
     },
     {
         "userId": 2,
         "username": "user2",
         "name": "Alice Smith",
         "password": "simplepass",
-        "profilepicture": "https://example.com/user2.jpg",
-        "bio": "Avid traveler and foodie. Exploring the world one bite at a time."
+        "profilepicture": "https://images.unsplash.com/photo-1579176647030-bd86f6fd4e1e?auto=format&fit=crop&q=60&w=400&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGluc3RhZ3JhbSUyMHByb2ZpbGV8ZW58MHx8MHx8fDA%3D",
+        "bio": "Avid traveler and foodie. Exploring the world one bite at a time.",
+        "postCount": 25,
+        "followers": 1500,
+        "following": 500
     },
     {
         "userId": 3,
         "username": "user3",
         "name": "Emily Johnson",
         "password": "easy123",
-        "profilepicture": "https://example.com/user3.jpg",
-        "bio": "Tech geek, coffee lover, and aspiring writer."
+        "profilepicture": "https://images.unsplash.com/photo-1610024062303-e355e94c7a8c?auto=format&fit=crop&q=60&w=400&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGluc3RhZ3JhbSUyMHByb2ZpbGV8ZW58MHx8MHx8fDA%3D",
+        "bio": "Tech geek, coffee lover, and aspiring writer.",
+        "postCount": 25,
+        "followers": 1500,
+        "following": 500
     },
     {
         "userId": 4,
         "username": "user4",
         "name": "Mark Wilson",
         "password": "userpass",
-        "profilepicture": "https://example.com/user4.jpg",
-        "bio": "Sports enthusiast and fitness junkie."
+        "profilepicture": "https://images.unsplash.com/photo-1504593811423-6dd665756598?auto=format&fit=crop&q=60&w=400&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fHBlcnNvbnxlbnwwfHwwfHx8MA%3D%3D",
+        "bio": "Sports enthusiast and fitness junkie.",
+        "postCount": 25,
+        "followers": 1500,
+        "following": 500
     },
     {
         "userId": 5,
         "username": "user5",
         "name": "Sara Brown",
         "password": "pass123",
-        "profilepicture": "https://example.com/user5.jpg",
-        "bio": "Passionate about art, fashion, and photography."
+        "profilepicture": "https://images.unsplash.com/photo-1599566150163-29194dcaad36?auto=format&fit=crop&q=60&w=400&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fHBlcnNvbnxlbnwwfHwwfHx8MA%3D%3D",
+        "bio": "Passionate about art, fashion, and photography.",
+        "postCount": 25,
+        "followers": 1500,
+        "following": 500
     },
     {
         "userId": 6,
         "username": "user6",
         "name": "Michael Lee",
         "password": "michaelpass",
-        "profilepicture": "https://example.com/user6.jpg",
-        "bio": "Music lover, guitarist, and tech-savvy."
+        "profilepicture": "https://images.unsplash.com/photo-1500259783852-0ca9ce8a64dc?auto=format&fit=crop&q=60&w=400&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjR8fHBlcnNvbnxlbnwwfHwwfHx8MA%3D%3D",
+        "bio": "Music lover, guitarist, and tech-savvy.",
+        "postCount": 25,
+        "followers": 1500,
+        "following": 500
     },
     {
         "userId": 7,
         "username": "user7",
         "name": "Olivia Clark",
         "password": "olivia123",
-        "profilepicture": "https://example.com/user7.jpg",
-        "bio": "Bookworm, explorer, and lifelong learner."
+        "profilepicture": "https://plus.unsplash.com/premium_photo-1664536392896-cd1743f9c02c?auto=format&fit=crop&q=60&w=400&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjV8fHBlcnNvbnxlbnwwfHwwfHx8MA%3D%3D",
+        "bio": "Bookworm, explorer, and lifelong learner.",
+        "postCount": 25,
+        "followers": 1500,
+        "following": 500
     },
     {
         "userId": 8,
         "username": "user8",
         "name": "James Turner",
         "password": "jamesturner",
-        "profilepicture": "https://example.com/user8.jpg",
-        "bio": "Outdoor adventurer and dog lover."
+        "profilepicture": "https://images.unsplash.com/photo-1581456495146-65a71b2c8e52?auto=format&fit=crop&q=60&w=400&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzB8fHBlcnNvbnxlbnwwfHwwfHx8MA%3D%3D",
+        "bio": "Outdoor adventurer and dog lover.",
+        "postCount": 25,
+        "followers": 1500,
+        "following": 500
     },
     {
         "userId": 9,
         "username": "user9",
         "name": "Linda White",
         "password": "lindapass",
-        "profilepicture": "https://example.com/user9.jpg",
-        "bio": "Fitness coach, health advocate, and food blogger."
+        "profilepicture": "https://images.unsplash.com/photo-1542206395-9feb3edaa68d?auto=format&fit=crop&q=60&w=400&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzJ8fHBlcnNvbnxlbnwwfHwwfHx8MA%3D%3D",
+        "bio": "Fitness coach, health advocate, and food blogger.",
+        "postCount": 25,
+        "followers": 1500,
+        "following": 500
     },
     {
         "userId": 10,
         "username": "user10",
         "name": "William Harris",
         "password": "will123",
-        "profilepicture": "https://example.com/user10.jpg",
-        "bio": "Entrepreneur, traveler, and startup enthusiast."
+        "profilepicture": "https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?auto=format&fit=crop&q=60&w=400&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDB8fHBlcnNvbnxlbnwwfHwwfHx8MA%3D%3D",
+        "bio": "Entrepreneur, traveler, and startup enthusiast.",
+        "postCount": 25,
+        "followers": 1500,
+        "following": 500
     }
 ]

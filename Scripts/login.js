@@ -25,7 +25,7 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
             loggedIn = true;
             loggedUser = user.username;
             const encodedUsername = encodeURIComponent(user.username);
-            window.location.href = `index.html?loggedIn=true&username=${encodedUsername}`;
+            window.location.href = `index.html?loggedIn=true&username=${encodedUsername}&id=${user.userId}`;
         } else {
             alert('Login failed. Please try again.');
         }
