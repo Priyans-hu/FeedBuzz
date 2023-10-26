@@ -71,9 +71,10 @@
     width: 100%;
     padding: 10px;
     outline: none;
+    color: black;
     font-weight: 500;
-    border: 1px solid #ccc;
     border-radius: 5px;
+    border: 1px solid #ccc;
 }
 
 .form-input:focus {
