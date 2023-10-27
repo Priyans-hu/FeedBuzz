@@ -111,13 +111,13 @@ body {
     background-color: transparent;
 }
 
-.editPostBtn:hover{
+.editPostBtn:hover i{
     color: #007bff;
     cursor: pointer;
     transform: scale(1.5);
 }
 
-.deletePostBtn:hover{
+.deletePostBtn:hover i{
     color: red;
     cursor: pointer;
     transform: scale(1.5);
