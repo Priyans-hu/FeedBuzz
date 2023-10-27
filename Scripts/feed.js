@@ -36,13 +36,10 @@ function addPost(postData) {
 
 
 // Function to update a post by postId
-function updatePost(postId, updatedData) {
-    const postIndex = posts.findIndex(post => post.postId === postId);
-    if (postIndex !== -1) {
-        posts[postIndex] = { ...posts[postIndex], ...updatedData };
-        updateUI(); // Update the UI to reflect the changes
-        savePostsToLocalStorage();
-    }
+function editPostPage(postId) {
+    window.location.href = `editPost.html?id=${postId}`;
+    updateUI(); // Update the UI to reflect the changes
+    savePostsToLocalStorage();
 }
 
 
@@ -95,7 +92,7 @@ function updateUI() {
                         <h1>${post.caption}</h1>
                     </div>
                     <div id="menuBtnCont" class="menuBtnCont">
-                        <button class="editPostBtn" title="Edit post"><i class="fa-regular fa-pen-to-square"></i></button>
+                        <button class="editPostBtn" title="Edit post" onClick="editPostPage(${post.postId})"><i class="fa-regular fa-pen-to-square"></i></button>
                         <button class="deletePostBtn" title="Delete post" onClick="confirmDeletion(${post.postId})"><i class="fa-regular fa-trash-can"></i></button>
                     </div>
                     <div class="postDesc">
@@ -151,23 +148,4 @@ document.getElementById('addPostButton').addEventListener('click', (e) => {
     newPostImgInput.value = '';
     newPostDescInput.value = '';
     newPostImgInput.value = '';
-});
-
-
-
-document.getElementById('updatePostButton').addEventListener('click', () => {
-    const postId = this.postId;
-    const updatedData = {
-        caption: 'updated Caption' /* Get the updated caption */,
-        description: 'updated description'/* Get the updated description */,
-    };
-    updatePost(postId, updatedData);
-});
-
-
-
-document.getElementById('deletePostButton').addEventListener('click', () => {
-    const postId = 'post id which need to be deleted'/* Get the postId of the post to delete */;
-
-    deletePost(postId);
 });
