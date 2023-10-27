@@ -52,7 +52,7 @@ function populateForm() {
                         </div>
                     </div>
                     <div class="form-actions">
-                        <button type="submit" id="updatePostButton" class="form-button">Update Post</button>
+                        <button type="submit" id="updatePostButton" class="form-button" onClick="updatePost(e)">Update Post</button>
                     </div>
                 </div>
             </form>
@@ -60,3 +60,18 @@ function populateForm() {
     `;
 }    
 
+function updatePost(e) {
+    e.preventDefault(); 
+    postToEdit.caption = document.getElementById('postTitle').value;
+    postToEdit.desc = document.getElementById('postDesc').value;
+    postToEdit.postImage = document.getElementById('postImage').value;
+    
+    savePostsToLocalStorage();
+    
+    window.history.back();
+}
+
+// Function to save posts to localStorage
+function savePostsToLocalStorage() {
+    localStorage.setItem('posts', JSON.stringify(posts));
+}
