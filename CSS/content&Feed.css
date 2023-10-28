@@ -92,6 +92,12 @@
     font-weight: 100;
 }
 
+@media screen and (max-width: 1024px) {
+    .accountCard {
+        right: 5%;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .accountCard {
         display: none;

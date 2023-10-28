@@ -197,7 +197,8 @@ body {
 /* Media query for mobile devices and small tablets */
 @media screen and (max-width: 1024px) {
     .postCard {
-        max-width: 80%;
+        max-width: 60%;
+        margin: 20px 2em;
     }
 
     .postCard:hover {

@@ -2,6 +2,7 @@ const urlParams = new URLSearchParams(window.location.search);
 const editPostId = urlParams.get("id");
 const editForm = document.getElementById("editPostFormContainer");
 let postToEdit;
+let index;
 
 let posts = [];
 fetch('Scripts/posts.json')
@@ -25,6 +26,7 @@ function fetchPost() {
         console.log("Checking post with postId: " + posts[i].postId);
         if (posts[i].postId == editPostId) {
             postToEdit = posts[i];
+            index = i;
             break;
         }
     }
@@ -34,7 +36,7 @@ function populateForm() {
     editForm.innerHTML = `
         <div class="editPostForm">
             <h1>Edit Post</h1>
-            <form>
+            <form action="" onSubmit="">
                 <div class="inputContianer">
                     <div class="form-group">
                         <label for="PostTitle" class="form-label">Title</label>
@@ -52,7 +54,7 @@ function populateForm() {
                         </div>
                     </div>
                     <div class="form-actions">
-                        <button type="submit" id="updatePostButton" class="form-button" onClick="updatePost(e)">Update Post</button>
+                        <button type="submit" id="updatePostButton" class="form-button">Update Post</button>
                     </div>
                 </div>
             </form>
@@ -60,18 +62,23 @@ function populateForm() {
     `;
 }    
 
-function updatePost(e) {
+document.getElementById('updatePostButton').addEventListener('click', (e) => {
     e.preventDefault(); 
-    postToEdit.caption = document.getElementById('postTitle').value;
-    postToEdit.desc = document.getElementById('postDesc').value;
-    postToEdit.postImage = document.getElementById('postImage').value;
-    
-    savePostsToLocalStorage();
-    
-    window.history.back();
-}
 
-// Function to save posts to localStorage
+    posts[index].caption = document.getElementById('postTitle').value;
+    posts[index].description = document.getElementById('postDesc').value;
+    posts[index].postImage = document.getElementById('postImg').value;
+
+    savePostsToLocalStorage();
+
+    window.history.back();
+});
+
 function savePostsToLocalStorage() {
-    localStorage.setItem('posts', JSON.stringify(posts));
+    try {
+        localStorage.setItem('posts', JSON.stringify(posts));
+        console.log('Posts saved to localStorage');
+    } catch (error) {
+        console.error('Error saving posts to localStorage:', error);
+    }
 }
