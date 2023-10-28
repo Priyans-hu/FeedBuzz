@@ -32,7 +32,7 @@ function fetchPost() {
 
 function populateForm() {
     editForm.innerHTML = `
-        <div>
+        <div class="editPostForm">
             <h1>Edit Post</h1>
             <form>
                 <div class="inputContianer">
