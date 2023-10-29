@@ -195,6 +195,35 @@ body {
 
 
 /* Media query for mobile devices and small tablets */
+@media screen and (max-width: 1440px) {
+    .postCard {
+        max-width: 50%;
+        margin: 20px 10em;
+    }
+
+    .postCard:hover {
+        cursor: pointer;
+    }
+
+    .postContent {
+        flex-direction: column;
+        align-items: left;
+        padding: 1.6em;
+    }
+
+
+    .postImg {
+        max-width: 100%;
+        margin-right: 0;
+    }
+
+    .postInfo {
+        width: 99%;
+        padding-left: 0.5em;
+    }
+}
+
+/* Media query for mobile devices and small tablets */
 @media screen and (max-width: 1024px) {
     .postCard {
         max-width: 60%;

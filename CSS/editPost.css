@@ -133,8 +133,17 @@ body {
     }
 }
 
+@media screen and (max-width: 1024px) {
+    .editPostForm {
+        max-width: 70%;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .editPostForm {
         max-width: 90%;
+    }
+    .form-group{
+        width: 85%;
     }
 }

@@ -16,6 +16,7 @@ fetch('Scripts/posts.json')
         posts = data;
         fetchPost();
         populateForm();
+        addSubmitEventListener(); // Add event listener after form is populated
     })
     .catch(error => {
         console.error('There was a problem with the fetch operation:', error);
@@ -62,17 +63,19 @@ function populateForm() {
     `;
 }    
 
-document.getElementById('updatePostButton').addEventListener('click', (e) => {
-    e.preventDefault(); 
+function addSubmitEventListener() {
+    document.getElementById('updatePostButton').addEventListener('click', (e) => {
+        e.preventDefault();
 
-    posts[index].caption = document.getElementById('postTitle').value;
-    posts[index].description = document.getElementById('postDesc').value;
-    posts[index].postImage = document.getElementById('postImg').value;
+        posts[index].caption = document.getElementById('postTitle').value;
+        posts[index].description = document.getElementById('postDesc').value;
+        posts[index].postImage = document.getElementById('postImg').value;
 
-    savePostsToLocalStorage();
+        savePostsToLocalStorage();
 
-    window.history.back();
-});
+        window.history.back();
+    });
+}
 
 function savePostsToLocalStorage() {
     try {
