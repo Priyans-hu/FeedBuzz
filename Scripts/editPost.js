@@ -5,22 +5,12 @@ let postToEdit;
 let index;
 
 let posts = [];
-fetch('Scripts/posts.json')
-    .then(response => {
-        if (!response.ok) {
-            throw new Error('Network response was not ok');
-        }
-        return response.json();
-    })
-    .then(data => {
-        posts = data;
-        fetchPost();
-        populateForm();
-        addSubmitEventListener(); // Add event listener after form is populated
-    })
-    .catch(error => {
-        console.error('There was a problem with the fetch operation:', error);
-    });
+function fetchAllPosts() {
+    posts = JSON.parse(localStorage.getItem('posts'));
+    fetchPost();
+    populateForm();
+    addSubmitEventListener();
+}
 
 function fetchPost() {
     for (var i = 0; i < posts.length; i++) {
@@ -61,7 +51,7 @@ function populateForm() {
             </form>
         </div>
     `;
-}    
+}
 
 function addSubmitEventListener() {
     document.getElementById('updatePostButton').addEventListener('click', (e) => {
