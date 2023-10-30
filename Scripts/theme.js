@@ -11,7 +11,6 @@ function applyTheme() {
 
 function addLightTheme() {
     document.body.style.backgroundColor = "#ebebeb";
-    document.body.classList.add("light");
 
     for (let i = 0; i < allIElements.length; i++) {
         allIElements[i].classList.add("light");
@@ -21,6 +20,7 @@ function addLightTheme() {
         postInfoElements[i].classList.add('light');
     }    
 
+    document.getElementById('userInteractionArea').classList.add('light');
     document.getElementById('userData').classList.add('light');
 }    
 
