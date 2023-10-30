@@ -1,12 +1,12 @@
 [
     {
         "postId": 1,
-        "authorName": "Alice",
+        "authorName": "be_a_bassi",
         "creationDateTime": "2023-09-01 09:30 AM",
-        "caption": "A Beautiful Sunrise",
-        "description": "Woke up to this breathtaking sunrise today. Nature is amazing!",
-        "postImage": "https://images.pexels.com/photos/746386/pexels-photo-746386.jpeg?auto=compress&cs=tinysrgb&w=1600",
-        "likeCount": 102,
+        "caption": "Cheers Bhaishabh",
+        "description": "You mean mere jaisa koi kabil, handsome, Good looking, rich, fit, virial, polite, lovable, humble, respectful, romatic, pyaara.... ।",
+        "postImage": "https://images.news18.com/ibnlive/uploads/2023/02/anubhav-singh-bassi-tu-jhoothi-main-makkar.jpg",
+        "likeCount": "1.1M",
         "comments": [
             { "commentId": 1, "authorName": "Bob", "text": "Wow, that's stunning!" },
             { "commentId": 2, "authorName": "Charlie", "text": "Nature never disappoints." }
@@ -14,14 +14,132 @@
     },
     {
         "postId": 2,
-        "authorName": "Bob",
-        "creationDateTime": "2023-09-02 02:15 PM",
-        "caption": "Hiking Adventure",
-        "description": "Exploring the great outdoors on a beautiful hiking trail.",
-        "postImage": "https://images.pexels.com/photos/1822458/pexels-photo-1822458.jpeg?auto=compress&cs=tinysrgb&w=1600",
-        "likeCount": 76,
+        "authorName": "Amit shah",
+        "creationDateTime": "2023-09-01 09:30 AM",
+        "caption": "Aap chronology samajhiye",
+        "description": "Bhaiyon Aur Behno...",
+        "postImage": "https://static.theprint.in/wp-content/uploads/2018/05/2018_5img17_May_2018_PTI5_17_2018_000164B.jpg",
+        "likeCount": "1.1M",
         "comments": [
-            { "commentId": 3, "authorName": "Alice", "text": "Looks like a fantastic adventure!" }
+            { "commentId": 1, "authorName": "Bob", "text": "Wow, that's stunning!" },
+            { "commentId": 2, "authorName": "Charlie", "text": "Nature never disappoints." }
+        ]
+    },
+    {
+        "postId": 3,
+        "authorName": "Amitabh Bacchan",
+        "creationDateTime": "2023-09-01 09:30 AM",
+        "caption": "Bacchans in the house",
+        "description": "Meri taraf mat dekhiye, mai aapki koi sahayeta nahi kar paunga",
+        "postImage": "https://c.ndtvimg.com/2023-10/v5mcp3m8_alia-_625x300_11_October_23.jpg",
+        "likeCount": "1.1M",
+        "comments": [
+            { "commentId": 1, "authorName": "Bob", "text": "Wow, that's stunning!" },
+            { "commentId": 2, "authorName": "Charlie", "text": "Nature never disappoints." }
+        ]
+    },
+    {
+        "postId": 4,
+        "authorName": "Virat kohli",
+        "creationDateTime": "2023-09-01 09:30 AM",
+        "caption": "Thanks for making my life better",
+        "description": "Woke up to this breathtaking sunrise today. Nature is amazing!",
+        "postImage": "https://images.tv9marathi.com/wp-content/uploads/2023/03/30225106/virushka.jpg",
+        "likeCount": "1.1M",
+        "comments": [
+            { "commentId": 1, "authorName": "Bob", "text": "Wow, that's stunning!" },
+            { "commentId": 2, "authorName": "Charlie", "text": "Nature never disappoints." }
+        ]
+    },
+    {
+        "postId": 5,
+        "authorName": "Hrithik",
+        "creationDateTime": "2023-09-01 09:30 AM",
+        "caption": "Meri Shaktiyon ka galat istemal kiya gaya hai maa",
+        "description": "koi mil gya",
+        "postImage": "https://i0.wp.com/the-avocado.org/wp-content/uploads/2018/05/2C9D2713-9B5D-46A4-969F-EC851460E4CF.jpeg?ssl=1",
+        "likeCount": "1M",
+        "comments": [
+            { "commentId": 1, "authorName": "Bob", "text": "Wow, that's stunning!" },
+            { "commentId": 2, "authorName": "Charlie", "text": "Nature never disappoints." }
+        ]
+    },
+    {
+        "postId": 6,
+        "authorName": "imSrk",
+        "creationDateTime": "2023-09-01 09:30 AM",
+        "caption": "Ammi jaan kehti thi...",
+        "description": "I forgot ammi jaan kya kehti thi, arre yaad aaya! Ammi jaan kehti thi \"Koi dhanda chota nhi hota, aur dhande se bada koi dharam nhi hota\"",
+        "postImage": "https://m.economictimes.com/thumb/msid-95243284,width-1200,height-900,resizemode-4,imgsize-37634/srk-also-struck-his-signature-pose-for-his-fans-.jpg",
+        "likeCount": "2.5M",
+        "comments": [
+            { "commentId": 1, "authorName": "Bob", "text": "Wow, that's stunning!" },
+            { "commentId": 2, "authorName": "Charlie", "text": "Nature never disappoints." }
+        ]
+    },
+    {
+        "postId": 7,
+        "authorName": "khiladi786",
+        "creationDateTime": "2023-09-01 09:30 AM",
+        "caption": "Khiladiyon Ka Khiladi",
+        "description": "Thodi der ruko ek aur new film bana kr aata hu!",
+        "postImage": "https://s3.india.com/wp-content/uploads/2022/10/akshay-Kumar-3.jpg",
+        "likeCount": "1.1M",
+        "comments": [
+            { "commentId": 1, "authorName": "Bob", "text": "Wow, that's stunning!" },
+            { "commentId": 2, "authorName": "Charlie", "text": "Nature never disappoints." }
+        ]
+    },
+    {
+        "postId": 8,
+        "authorName": "Aditya Roy kapoor",
+        "creationDateTime": "2023-09-01 09:30 AM",
+        "caption": "Sun raha hai na tu",
+        "description": "Karde idhar bhi tu nighahien",
+        "postImage": "https://static.toiimg.com/thumb/97607070.cms?width=400&height=300&resizemode=4&imgsize=39536",
+        "likeCount": "1.1M",
+        "comments": [
+            { "commentId": 1, "authorName": "Bob", "text": "Wow, that's stunning!" },
+            { "commentId": 2, "authorName": "Charlie", "text": "Nature never disappoints." }
+        ]
+    },
+    {
+        "postId": 9,
+        "authorName": "Alia Bhatt",
+        "creationDateTime": "2023-09-01 09:30 AM",
+        "caption": "Finally mai ghar phauch gyi",
+        "description": "Mujhe ghar jana hai",
+        "postImage": "https://akm-img-a-in.tosshub.com/indiatoday/styles/medium_crop_simple/public/2023-07/1a16c52c-bb96-4a37-b983-3b19e1b21378.jpeg?VersionId=IWWaZOFDftKG9ZbfsJMXlY61fBve1SJw",
+        "likeCount": "1.1M",
+        "comments": [
+            { "commentId": 1, "authorName": "Bob", "text": "Wow, that's stunning!" },
+            { "commentId": 2, "authorName": "Charlie", "text": "Nature never disappoints." }
+        ]
+    },
+    {
+        "postId": 10,
+        "authorName": "Alia Bhatt",
+        "creationDateTime": "2023-09-01 09:30 AM",
+        "caption": "Mere ranbir se gulu gulu karegi to dhoptungi na usko",
+        "description": "Woke up to this breathtaking sunrise today. Nature is amazing!",
+        "postImage": "https://cdn.siasat.com/wp-content/uploads/2023/07/RaliaInstagram.jpg",
+        "likeCount": "1.1M",
+        "comments": [
+            { "commentId": 1, "authorName": "Bob", "text": "Wow, that's stunning!" },
+            { "commentId": 2, "authorName": "Charlie", "text": "Nature never disappoints." }
+        ]
+    },
+    {
+        "postId": 12,
+        "authorName": "Deepika padukone",
+        "creationDateTime": "2023-09-01 09:30 AM",
+        "caption": "Lungi dance",
+        "description": "Disco mai jab ye gaana bajega, on the floor aana padega",
+        "postImage": "https://s2.dmcdn.net/v/JylYT1Q5LC_BR_N3l/x1080",
+        "likeCount": "1.1M",
+        "comments": [
+            { "commentId": 1, "authorName": "Bob", "text": "Wow, that's stunning!" },
+            { "commentId": 2, "authorName": "Charlie", "text": "Nature never disappoints." }
         ]
     }
 ]

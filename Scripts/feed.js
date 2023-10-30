@@ -99,7 +99,7 @@ function updateUI() {
                         <p>${post.description}</p>
                     </div>
                     <div class="likeCountContainer"><i class="fa-solid fa-heart"></i>${post.likeCount}</div>
-                    <div class="commentContainer">View all ${post.comments.length} comments</div>
+                    <div class="commentContainer">${post.comments.length}10k comments</div>
                     <div class="postDetails">
                         <div class="authorName">
                             <p>Author: ${post.authorName}</p>
