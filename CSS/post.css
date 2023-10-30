@@ -22,7 +22,7 @@ body {
     position: relative;
     border-radius: 5px;
     background-color: rgba(255, 255, 255, 0.13);
-    box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+    box-shadow: 0 0 10px rgba(8, 7, 16, 0.6);
     border: 2px solid rgba(255, 255, 255, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -58,7 +58,7 @@ body {
 
 .postCard:hover {
     transform: scale(1.02);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.3);
 }
 
 /* Flex container for the post content */
@@ -93,7 +93,6 @@ body {
     width: 90%;
     font-size: 1.6em;
     margin: 10px 0;
-    color: white;
     font-weight: normal;
 }
 
@@ -111,11 +110,6 @@ body {
     color: white;
     background-color: transparent;
 }
-
-/* .editPostBtn,
-.deletePostBtn {
-    display: none;
-} */
 
 .editPostBtn:hover i {
     color: #007bff;
@@ -147,9 +141,12 @@ body {
 }
 
 /* Style for the post description */
+.postDesc{
+    color: #EDEAE0;
+}
+
 .postDesc p {
     font-size: 0.9em;
-    color: #EDEAE0;
     margin-top: 10px;
 }
 

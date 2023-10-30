@@ -27,7 +27,7 @@ function getIndexAndRender(){
 function renderUserCard(index) {
     currUser = users[index - 1];
     userCard.innerHTML = `
-        <div class="userData">
+        <div class="userData" id="userData">
             <div class="userImg">
                 <img src="${currUser.profilepicture}" alt="${currUser.username}">
             </div>
