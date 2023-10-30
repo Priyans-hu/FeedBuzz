@@ -90,6 +90,7 @@ body {
 
 /* Style for the post caption */
 .postCaption h1 {
+    width: 90%;
     font-size: 1.6em;
     margin: 10px 0;
     color: white;
@@ -275,5 +276,9 @@ body {
 
     .postInfo {
         margin-top: 1em;
+    }
+
+    .postCaption h1{
+        width: 85%;
     }
 }
