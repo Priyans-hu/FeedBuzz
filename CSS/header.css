@@ -58,7 +58,16 @@
     color: #EDEAE0;
     padding: 0.5em 1em;
     border-radius: 0.2em;
+    transition: all 0.1s ease; 
     background-color: #007bff;
+}
+
+.site-header .main-nav ul li button:hover,
+.site-header .main-nav ul li button:hover a,
+.site-header .main-nav ul li button:hover i {
+    background-color: white;
+    color: black;
+    font-weight: bold;
 }
 
 .site-header #headerAddPostBtn {
